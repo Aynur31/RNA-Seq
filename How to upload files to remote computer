@@ -1,0 +1,7 @@
+## copy files from local dir to remote service : also you must be in local bash terminal
+## you must be in the same directory where your local file is or you need to provide full path of the files 
+scp dexseq_prepare_annotation.py username@domain:/home/xxx/xxx  ## after : you need to do pwd to get where you wanna upload the file 
+## for coping files to local machience use sftp, you need to be in the directory where you wanna download files to . 
+sftp ssh username@domain 
+## above code directs you for password to login to the server then you can move through directories in the server 
+get file
