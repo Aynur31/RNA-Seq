@@ -1,0 +1,16 @@
+directory <- "~/Desktop/RStudio/DEXseq/DEXseq_counts/OSM_DEXSeq"
+countFiles = list.files(directory, pattern=".txt$", full.names=TRUE)
+basename(countFiles)
+flattenedFile = "Mus_musculus.GRCm38.101.DEXSeq.chr.gff"
+basename(flattenedFile)
+sampleNames <- c("CON-1","CON-2","OSM-1","OSM-2")
+sampleCondition <- c("control","control","osm","osm")
+samplelibType <- c("paired-end","paired-end","paired-end","paired-end")
+sampleTable <- data.frame(sampleName = sampleNames,condition = sampleCondition,
+                          libTpye = samplelibType)
+suppressPackageStartupMessages(library("DEXSeq"))
+osmdxd = DEXSeqDataSetFromHTSeq(countFiles,
+                             sampleData=sampleTable,
+                             design= ~ sample + exon + condition:exon,
+                                                flattenedfile=flattenedFile)
+colData(osmdxd)
