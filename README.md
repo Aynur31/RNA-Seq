@@ -9,3 +9,5 @@ https://dockflow.org/workflow/rnaseq-gene/
 https://www.bioconductor.org/help/course-materials/2015/BioC2015/bioc2015rnaseq.html
 ## Tools needed to install RNA-seq via conda
 https://www.programmersought.com/article/9342907429/
+## below code is for a free course for a biologist 
+http://korflab.ucdavis.edu/unix_and_perl/
