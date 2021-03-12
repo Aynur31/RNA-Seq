@@ -11,3 +11,7 @@ https://www.bioconductor.org/help/course-materials/2015/BioC2015/bioc2015rnaseq.
 https://www.programmersought.com/article/9342907429/
 ## below code is for a free course for a biologist 
 http://korflab.ucdavis.edu/unix_and_perl/
+
+# Another tutorial 
+https://lashlock.github.io/compbio/R_presentation.html
+
